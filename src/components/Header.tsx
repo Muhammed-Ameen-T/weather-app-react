@@ -1,5 +1,4 @@
-import React from 'react';
-import { Cloud, Sun, Moon } from 'lucide-react';
+import { Cloud} from 'lucide-react';
 import type { TemperatureUnit, Theme } from '../types/weather';
 
 interface HeaderProps {
@@ -9,7 +8,7 @@ interface HeaderProps {
   onTemperatureUnitToggle: () => void;
 }
 
-export function Header({ theme, onThemeToggle, temperatureUnit, onTemperatureUnitToggle }: HeaderProps) {
+export function Header({ temperatureUnit, onTemperatureUnitToggle }: HeaderProps) {
   return (
     <header className="backdrop-blur-md bg-white/10 dark:bg-gray-900/10 border-b border-white/20 dark:border-gray-700/20">
       <div className="container mx-auto px-4 py-4">
